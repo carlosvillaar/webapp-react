@@ -3,7 +3,7 @@ import { GlobalContext } from "../context/GlobalContext";
 import FilmCard from "../components/FilmCard";
 
 const Home = () => {
-  const { fetchData, films } = useContext(GlobalContext);
+  const { fetchFilms, films } = useContext(GlobalContext);
 
   const renderFilms = () => {
     return films.map((film) => {
@@ -14,7 +14,7 @@ const Home = () => {
       );
     });
   };
-  useEffect(fetchData, []);
+  useEffect(fetchFilms, []);
 
   return (
     <>

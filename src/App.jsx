@@ -11,7 +11,7 @@ const App = () => {
         <Routes>
           <Route Component={DefaultLayout}>
             <Route path="/" Component={Home} />
-            <Route path="/details" Component={Details} />
+            <Route path="/movie/:id" Component={Details} />
           </Route>
         </Routes>
       </BrowserRouter>
