@@ -7,12 +7,6 @@ const Detail = () => {
   const { id } = useParams();
   const { film, fetchFilm } = useContext(GlobalContext);
 
-  const renderReviews = () => {
-    film?.reviews?.map((item) => {
-      return <ReviewCard key={item.id} review={item} />;
-    });
-  };
-
   useEffect(() => fetchFilm(id), []);
 
   return (
@@ -48,8 +42,6 @@ const Detail = () => {
         <div className="mt-5">
           <h4 className="mb-3">Recensioni:</h4>
           {film?.reviews?.map((item) => {
-            console.log(item);
-
             return <ReviewCard key={item.id} review={item} />;
           })}
         </div>
