@@ -39,3 +39,26 @@ Per chi non ha terminato la consegna precedente la termini e poi per tutti aggiu
 ### Bonus
 
 Validazione del form prima dell’invio con eventuale messaggio di errore
+
+## Parte 3
+
+A partire dal lavoro individuale di stamattina dedichiamo la giornata ad aggiungere alla webapp i form.
+Prima di fare il form per la creazione del nuovo film terminate i passaggi dei giorni passati.
+Cose da ricordare per l’uploda dell’immagine tramite API:
+
+Lato beckend:
+
+- installare multer `npm i multer`
+- aggiungere il middlevare (che allego ATTENZIONE AL PERCORSO)
+- nel router importarlo ‘iniettare’ il middleware nella rotta store ex `router.post('/', upload.single('image'), bookController.store)`
+- nel controller gestire i dati in ingresso delle req e il nome del file con `req.file.filename`;
+
+Lato frontend
+
+- creare la nuova rotta per il form di creazione
+- creare il componente della nuova pagina che contiene il form
+- il campo input che si occupa dell’immagine deve essere di tipo file e non ha il value
+- l’handler che gestisce il formData alla chiave “image” dovrà associare il valore `e.target.files[0]`
+- per l’invio del form creare un’istanza FormData (const `dataToSend = new FormData();`)
+- a questa istanza, ciclando con un `for/in` il nostro fromData faremo l’append delle chiavi/valore del nostro form
+- l’headers della chiamata axios deve essere `'Content-Type': 'multipart/form-data'`
