@@ -1,5 +1,7 @@
 # Setup Web App React
 
+## Parte 1
+
 ` MILESTONE 1`
 
 - Mettiamo su un nuovo progetto React aiutandoci con Vite
@@ -26,3 +28,14 @@
 
 - Stampare le stelline del voto utilizzando un componente dedicato
 - Gestire l’errore 404 in caso di libro non presente reindirizzando alla pagina 404
+
+---
+
+## Parte 2
+
+Oggi continuiamo il nostro progetto full-stack su enrambe le repo: webapp-react e webapp-express.
+Per chi non ha terminato la consegna precedente la termini e poi per tutti aggiungere l’API che gestisce l’aggiunta di una nuova recensione e, sul front end nella pagina di dettaglio, il form che invia in post la nuova recensione.
+
+### Bonus
+
+Validazione del form prima dell’invio con eventuale messaggio di errore
