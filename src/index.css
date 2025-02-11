@@ -3,3 +3,17 @@
   width: 100%;
   object-fit: cover;
 }
+
+.gradient-text {
+  font-size: 48px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  background: linear-gradient(180deg, #ff0000, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body {
+  background-color: #000000ef;
+}

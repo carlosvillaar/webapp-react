@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const FilmCard = ({ filmData }) => {
   return (
-    <div className="card p-3 mb-3">
+    <div className="card text-bg-dark p-3 mb-3">
       <div className="card-img">
         <img
           className="film-poster mb-3"

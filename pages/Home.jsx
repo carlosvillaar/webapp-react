@@ -18,7 +18,6 @@ const Home = () => {
 
   return (
     <>
-      <h1 className="text-center">BoolFilms</h1>
       <div className="container my-5">
         <div className="row row-cols-3">{renderFilms()}</div>
       </div>
